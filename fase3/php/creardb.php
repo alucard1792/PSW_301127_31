@@ -14,7 +14,7 @@ $sql = "CREATE DATABASE bdunad31";
 if (mysqli_query($conn, $sql)) {
   echo "La base de datos 'bdunad31' se creó correctamente.";
 } else {
-  echo "Ocurrio un error al crear 'bdunad31':" . mysql_error($conn);
+  echo "Ocurrio un error al crear 'bdunad31':" . mysqli_error($conn);
 }
 mysqli_close($conn);
 ?>
